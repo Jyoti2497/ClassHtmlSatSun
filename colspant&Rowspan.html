@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        </style>
+</head>
+<body>
+    <!--data list started-->
+    <dl>
+        <dt>Jyoti</dt>
+        <dd>BCA</dd>
+        <dt>Anu</dt>
+        <dd>BMS</dd>
+        <dt>Abhi</dt>
+        <dd>B.Com</dd>
+    </dl><br><br><br>
+
+    <!--table started-->
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Class Name</th>
+            <th>Roll No</th>
+            <th>Marks</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Jyoti</td>
+            <td>BCA</td>
+            <td>101</td>
+            <td>90%</td>
+        </tr>
+        <tr>
+            <td>Anu</td>
+            <td>BMS</td>
+            <td>102</td>
+            <td>80%</td>
+        </tr>
+        <tr>
+            <td>Abhi</td>
+            <td>B.com</td>
+            <td>103</td>
+            <td>80%</td>
+        </tr>
+    </tbody>  
+    <tfoot>
+        <!-- <tr>
+            <td>Students Data</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr> -->
+    </tfoot>  
+    </table><br><br>
+    <hr>
+    <br><br>
+    <!--Table no2-->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>24</td>
+                <td>20,000</td>
+            </tr>
+            <tr>
+                <td>Adam</td>
+                <td>31</td>
+                <td>35,000</td>
+            </tr>
+            <tr>
+                <td>Chris</td>
+                <td colspan="2">27</td><!--colspan is used to merge the cells of the table and need to add count how many cell we want to merge-->
+               
+            </tr>
+        </tbody>
+    </table>
+    <br><br><hr><br>
+    <!--table no 3-->
+    <table>
+        <h3>Table with Colspan</h3>
+        <thead>
+            <tr>
+                <th>S.N</th>
+                <th>Item</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Apple</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mango</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>orange</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table><br><br>
+    <!--table no 4-->
+    <table>
+        <caption>Product Performance By Region</caption>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <td colspan="4">Performance Metrics</td>
+            </tr>
+            <tr>
+                <th>Region</th>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+                <th>Q4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Product X</td>
+                <td>$30,000</td>
+                <td>$28,000</td>
+                <td>$35,000</td>
+                <td>$32,000</td>
+            </tr>
+            <tr>
+                <td>95%</td>
+                <td>92%</td>
+                <td>98%</td>
+                <td>94%</td>
+            </tr>
+        </tbody>
+    </table><br><br><br><hr>
+    <!--table no 5-->
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+           
+            <tr>
+                <td rowspan="2">1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td colspan="2">1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table><br><br>
+
+    <!--table no 6-->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5">Time table</th>
+            </tr>
+            <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thru</th>
+                <th>Fri</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">Hours</td>
+             
+            </tr>
+            <tr>
+                <td>Hours</td>
+                <td>Hours</td>
+                <td>Hours</td>
+                <td>Hours</td>
+             
+            </tr>
+            <tr>
+                <td>Hours</td>
+                <td>Hours</td>
+                <td>Hours</td>
+                <td>Hours</td>
+       
+            </tr>
+            <tr>
+                <td colspan="5">Lunch</td>
+              
+            </tr>
+            <tr>
+                <td>Hours</td>
+                <td>Hours</td>
+                <td>Hours</td>
+                <td rowspan="2">Project</td>
+          
+            </tr>
+            <tr>
+                <td>Hours</td>
+                <td>Hours</td>
+                <td>Hours</td>
+            </tr>
+        </tbody>
+    </table><br><br>
+
+    <!--table no 7-->
+    <table>
+        <thead>
+            <tr>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">head</td>
+                <td colspan="3">head</td>
+          
+            </tr>
+            <tr>
+                <td colspan="2">head</td>
+                <td rowspan="3">head</td>
+            </tr>
+            <tr>
+                <td>head</td>
+                <td>head</td>
+            </tr>
+            <tr>
+                <td>head</td>
+                <td>head</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
